@@ -46,6 +46,13 @@
                 }
                
             </td>
+
+            <td>
+                @foreach(var platform in item.Platforms)
+                {
+                    <span class="badge bg-primary">@platform.Name</span>                
+                }
+            </td>
             <td>
                 <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
                 <a asp-action="Details" asp-route-id="@item.Id">Details</a> |

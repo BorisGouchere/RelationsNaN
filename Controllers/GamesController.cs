@@ -156,6 +156,11 @@ namespace RelationsNaN.Controllers
             return RedirectToAction(nameof(Index));
         }
 
+        //public async Task<IActionResult> AddPlatform(int id)
+        //{
+        //    var game = await _contest.
+        //}
+
         private bool GameExists(int id)
         {
             return _context.Game.Any(e => e.Id == id);
